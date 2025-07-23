@@ -400,9 +400,7 @@ async def list_users(client: Client, msg: Message):
 
 @bot.on_message(filters.command(["drm"]) )
 async def txt_handler(bot: Client, m: Message):
-    if not is_authorized(m.chat.id):
-        await m.reply_text("**🚫You are not a premium user.\n\n ✅please buy premium to download TxT. **")
-        return
+   
     editable = await m.reply_text(f"**🔹Hi I am Poweful TXT Downloader📥 Bot.\n🔹Send me the txt file and wait.**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
