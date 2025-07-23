@@ -49,7 +49,7 @@ except ValueError:
 ADMINS.append(OWNER)
 
 # Define the owner's user ID
-OWNER_ID = 8172163893 # Replace with the actual owner's user ID
+OWNER_ID = 6748247898 # Replace with the actual owner's user ID
 
 # List of sudo users (initially empty or pre-populated)
 SUDO_USERS = [6748247898]
